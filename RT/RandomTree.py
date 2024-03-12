@@ -8,7 +8,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 
 # Cargar datos
-data = pd.read_csv('../ObesityDataSet_raw_and_data_sinthetic.csv')
+data = pd.read_csv('ObesityDataSet_raw_and_data_sinthetic.csv')
 
 # Exploración de datos
 obesity_counts = data["NObeyesdad"].value_counts()
@@ -22,7 +22,7 @@ for col, encoder in label_encoders.items():
 
 # Separar datos de entrenamiento y prueba
 X = data[['Gender', 'Age', 'Height', 'Weight', 'family_history_with_overweight', 'FAVC', 'FCVC', 'NCP', 'CAEC', 'SMOKE',
-          'CH2O', 'SCC', 'FAF', 'TUE', 'CALC', 'MTRANS']]
+        'CH2O', 'SCC', 'FAF', 'TUE', 'CALC', 'MTRANS']]
 y = data['NObeyesdad']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=4)
 

@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.svm import SVC
 
 # Cargar el conjunto de datos desde el archivo CSV
-file_path = '../ObesityDataSet_raw_and_data_sinthetic.csv'
+file_path = 'ObesityDataSet_raw_and_data_sinthetic.csv'
 data = pd.read_csv(file_path)
 
 # Separar las características (X) y la variable objetivo (y)

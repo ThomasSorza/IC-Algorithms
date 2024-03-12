@@ -6,12 +6,11 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.neural_network import MLPClassifier
 
 # Cargar el conjunto de datos desde el archivo CSV
-file_path = '../ObesityDataSet_raw_and_data_sinthetic.csv'
+file_path = 'ObesityDataSet_raw_and_data_sinthetic.csv'
 df = pd.read_csv(file_path)
 
 # Convertir variables categóricas usando one-hot encoding
-df = pd.get_dummies(df, columns=['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'CALC', 'SMOKE', 'SCC',
-                                 'MTRANS'])
+df = pd.get_dummies(df, columns=['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'CALC', 'SMOKE', 'SCC','MTRANS'])
 
 # Convertir la variable objetivo
 le = LabelEncoder()
