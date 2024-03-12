@@ -29,8 +29,8 @@ for i, label in enumerate(label_encoder.classes_):
 
 
 # Agrupar los valores de la variable objetivo en dos clases Obeso y No Obeso
-y = np.where(y <= 2, "No Obeso", y)  # Bajo Peso y Peso Normal
-y = np.where(y >= 2, "Obeso", y)  # Obeso
+y = np.where(y <= 1, 0, y)  # No Obeso
+y = np.where(y >= 2, 1, y)  # Obeso
 
 
 # Dividir el conjunto de datos en conjuntos de entrenamiento y prueba
@@ -101,32 +101,6 @@ plt.ylabel('Peso')
 plt.title('Hiperplano de Decisión en SVM')
 plt.show()
 
-# # 8. Curva ROC y Curva Precisión-Recall (para SVM binaria)
-# from sklearn.metrics import roc_curve, precision_recall_curve
-#
-# y_scores = classifier.decision_function(X_test)
-# fpr, tpr, _ = roc_curve(y_test, y_scores)
-# precision, recall, _ = precision_recall_curve(y_test, y_scores)
-
-# Curva ROC
-# plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve')
-# plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
-# plt.xlabel('False Positive Rate')
-# plt.ylabel('True Positive Rate')
-# plt.title('Curva ROC')
-# plt.legend(loc='lower right')
-# plt.show()
-
-# Curva Precisión-Recall
-# plt.plot(recall, precision, color='blue', lw=2, label='Precision-Recall curve')
-# plt.xlabel('Recall')
-# plt.ylabel('Precision')
-# plt.title('Curva Precisión-Recall')
-# plt.legend(loc='lower left')
-# plt.show()
-
-
-
 # Calcular la matriz de confusión
 conf_matrix = confusion_matrix(y_test, y_pred)
 
@@ -137,12 +111,3 @@ plt.ylabel('Valor Real')
 plt.title('Matriz de Confusión')
 plt.show()
 
-# Realizar una predicción con el modelo entrenado
-nuevo_registro = [[1.70, 70]]  # Altura: 1.70, Peso: 70
-prediccion = classifier.predict(scaler.transform(nuevo_registro))
-
-# Si es un problema de clasificación, puedes obtener la clase predicha
-clase_predicha = np.argmax(prediccion)
-
-# Imprimir la clase predicha o realizar la acción correspondiente
-print(f'Clase predicha: {clase_predicha}')
