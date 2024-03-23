@@ -8,9 +8,9 @@ Este repositorio contiene implementaciones de algoritmos de Machine Learning en 
 | Descripción                                     | Enlace de Descarga                                            |
 |-------------------------------------------------|---------------------------------------------------------------|
 | Usa GitDown para descargar el repositorio completo: | [Git Down](https://minhaskamal.github.io/DownGit/#/home) |
-| Repositorio de Algoritmos en GitHub             | [GitHub - Algoritmos](https://github.com/sh4dex/IC-Algorithms/tree/main/Algoritmos) |
+| Repositorio de Algoritmos en GitHub             | [GitHub - Algoritmos](https://github.com/sh4dex/IC-Algorithms/tree/main/Entrenamiento) |
 
-Posteriormente se descarga un archivo .zip desde el navegador el cual se debe descomprimir para poder ejecutar los scripts
+>Posteriormente se descarga un archivo .zip desde el navegador el cual se debe descomprimir para poder ejecutar los scripts .py
 
 ## Instalación de Dependencias
 
@@ -20,10 +20,9 @@ Para instalar las dependencias necesarias, puedes usar el archivo `requirements.
 pip install -r requirements.txt
 ```
 
-## Se encuentra el archivo excel de atques de phishing
-- Descripción de las columnas:
+## Descripción de las columnas en el excel de ataques de phising:
 
-| Característica                   | Definición                                                                                      |
+| **Característica**                   | **Definición**                                                                                   |
 |---------------------------------|-------------------------------------------------------------------------------------------------|
 | NumDots                         | Número de puntos en la URL.                                                                    |
 | SubdomainLevel                  | Nivel del subdominio en la URL.                                                                |
