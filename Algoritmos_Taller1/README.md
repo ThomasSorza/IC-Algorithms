@@ -8,7 +8,7 @@ Este repositorio contiene implementaciones de algoritmos de Machine Learning en 
 | Descripción                                     | Enlace de Descarga                                            |
 |-------------------------------------------------|---------------------------------------------------------------|
 | Usa GitDown para descargar el repositorio completo: | [Git Down](https://minhaskamal.github.io/DownGit/#/home) |
-| Repositorio de Algoritmos en GitHub             | [GitHub - Algoritmos](https://github.com/sh4dex/IC-Algorithms/tree/main/Algoritmos) |
+| Repositorio de Algoritmos en GitHub             | [GitHub - Algoritmos](https://github.com/sh4dex/IC-Algorithms/tree/main/Algoritmos_Taller1) |
 
 >Posteriormente se descarga un archivo .zip desde el navegador el cual se debe descomprimir para poder ejecutar los scripts .py
 ## Instalación de Dependencias
